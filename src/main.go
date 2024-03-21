@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	// "fmt"
 )
 
 func main() {
@@ -13,9 +14,9 @@ func main() {
 	flag.Parse()
 
 	if folder != "" {
-		Scan(folder)
+		scan(folder)
 		return
 	}
 
-	Stats(email)
+	stats(email)
 }
